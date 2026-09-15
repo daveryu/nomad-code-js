@@ -1,14 +1,24 @@
-let a = 6;
-let b = 2;
+const calculator = {
+    add: function (a, b) {
+        console.log(a + b);
+    },
+    minus: function (a, b) {
+        console.log(a - b);
+    },
+    divide: function (a, b) {
+        console.log(a / b);
+    },
+    multi: function (a, b) {
+        console.log(a*b);
+    },
+    powerOf: function (a, b) {
+        console.log(a**b);
+    },
+};
 
-let myName = "Ryu";
 
-console.log(a+b);
-console.log(a*b);
-console.log(a/b);
-
-console.log("Hello " + myName);
-
-myName = "John";
-
-console.log("New name is " + myName)
+calculator.add(1,2);
+calculator.minus(1,2);
+calculator.divide(1,2);
+calculator.powerOf(2,3);
+calculator.multi(3,2);
